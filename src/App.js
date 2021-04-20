@@ -7,6 +7,10 @@ import Footer from './components/Footer';
 import axios from 'axios';
 
 class App extends Component {
+  state = {
+    dishes: null,
+    errMsg: null
+  }
   componentDidMount() {
 
     // // let a = fetch('https://jsonplaceholder.typicode.com/posts');
@@ -25,7 +29,7 @@ class App extends Component {
     //   .then(response => response.data)
     //   .then(data => console.log(data));
 
-    // retrieve & error handle
+    // // retrieve & error handle
     // axios.get('http://localhost:3001/dishes')
     //   // .then(response => console.log(response));
     //   .then(response => response.data)
@@ -58,8 +62,85 @@ class App extends Component {
     //delete
     // axios.delete('http://localhost:3001/dishes/7').then(response => console.log(response));
 
+    // // retrieve & error handle using state control
+    // console.log("ComponentDidMount: ", this.state);
+    // axios.get('http://localhost:3001/dishes')
+    //   .then(response => response.data)
+    //   .then(data => {
+    //     this.setState({
+    //       dishes: data
+    //     })
+    //   })
+    //   .catch(error => {
+    //     this.setState({
+    //       errMsg: error.message
+    //     })
+    //   });
+
+    // //create & error handle using state control
+    // axios.post('http://localhost:3001/dishes', {
+    //   name: 'Coca-cola',
+    //   image: '',
+    //   category: 'drink',
+    //   label: '',
+    //   price: '70',
+    //   featured: false,
+    //   description: 'Get inspired to mix it up a little with Coca-cola! Crisp and refreshing, it mixes into all kinds of drinks, cocktails, punches, baked goods, and more, perfect for you!',
+    // })
+    //   .then(response => response.data)
+    //   .then(data => {
+    //     this.setState({
+    //       dishes: data
+    //     })
+    //   })
+    //   .catch(error => {
+    //     this.setState({
+    //       errMsg: error.message
+    //     })
+    //   });
+
+    // //update & error handle using state control
+    // axios.put('http://localhost:3001/dishes/7', {
+    //   name: 'Coca-cola',
+    //   image: 'assets/images/7cocacola.jpg',
+    //   category: 'drink',
+    //   label: '',
+    //   price: '70',
+    //   featured: false,
+    //   description: 'Get inspired to mix it up a little with Coca-cola! Crisp and refreshing, it mixes into all kinds of drinks, cocktails, punches, baked goods, and more, perfect for you!',
+    // })
+    //   .then(response => response.data)
+    //   .then(data => {
+    //     this.setState({
+    //       dishes: data
+    //     })
+    //   })
+    //   .catch(error => {
+    //     this.setState({
+    //       errMsg: error.message
+    //     })
+    //   });
+
+    // //delete & error handle using state control
+    // axios.delete('http://localhost:3001/dishes/8')
+    //   .then(response => response.data)
+    //   .then(data => {
+    //     this.setState({
+    //       dishes: data
+    //     })
+    //   })
+    //   .catch(error => {
+    //     this.setState({
+    //       errMsg: error.message
+    //     })
+    //   });
 
   }
+
+  componentDidUpdate() {
+    console.log("Update: ", this.state);
+  }
+
   render() {
     return (
       <div className="App">
