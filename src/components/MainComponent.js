@@ -17,7 +17,7 @@ function MainComponent() {
     return (
         <div className="main">
             <h1> Good {timeofDay}</h1>
-            <img src="flower-removebg-preview.png"></img>
+            <img src="flower-removebg-preview.png" alt="flower"></img>
         </div>
     );
 }
