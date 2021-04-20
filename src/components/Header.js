@@ -3,7 +3,11 @@ import React from 'react';
 function Header() {
     return (
         <div className="head">
-            <p style={{ color: "blue", fontsize: "50px" }}>Header</p>
+            <h1>
+                <img src="flower-removebg-preview.png" className="icon" ></img>
+                Header
+                <img src="flower-removebg-preview.png" className="icon"></img>
+            </h1>
         </div>
     );
 }

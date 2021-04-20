@@ -16,8 +16,8 @@ function MainComponent() {
     }
     return (
         <div className="main">
-            <p style={{ color: "green", fontsize: "50px" }}> Good {timeofDay}</p>
-
+            <h1> Good {timeofDay}</h1>
+            <img src="flower-removebg-preview.png"></img>
         </div>
     );
 }

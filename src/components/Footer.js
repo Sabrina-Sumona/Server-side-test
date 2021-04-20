@@ -3,7 +3,11 @@ import React from 'react';
 function Footer() {
     return (
         <div className="foot">
-            <p style={{ color: "red", fontsize: "50px" }}>Footer</p>
+            <h1>
+                <img src="flower-removebg-preview.png" className="icon" ></img>
+                Footer
+                <img src="flower-removebg-preview.png" className="icon"></img>
+            </h1>
         </div>
     );
 }

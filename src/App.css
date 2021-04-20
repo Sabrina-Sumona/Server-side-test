@@ -1,0 +1,25 @@
+.head,.foot{
+    height: 70px;
+    width: 100%;
+    background-color: blue;
+    text-align: center;
+    color: white;
+    padding: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: auto;
+}
+.main{
+    height: 400px;
+    width: 100%;
+    background-color: skyblue;
+    text-align: center;
+    padding: auto;
+    padding-top: 50px;
+    margin: auto;
+}
+
+.icon{
+    height: 25px;
+    width: 35px;
+}
